@@ -70,7 +70,28 @@ namespace CapaPresentacion1
 
         }
 
+        private void menucursos_Click(object sender, EventArgs e)
+        {
+            AbrirForma((IconMenuItem)sender, new formingresar());
 
 
+
+        }
+
+        private void menuinscripcion_Click(object sender, EventArgs e)
+        {
+            AbrirForma((IconMenuItem)sender, new formGestionProveedores());
+        }
+
+        private void menudocentes_Click(object sender, EventArgs e)
+        {
+            AbrirForma((IconMenuItem)sender, new formDestionlibro
+                ());
+        }
+
+        private void menuciclos_Click(object sender, EventArgs e)
+        {
+            AbrirForma((IconMenuItem)sender, new formGestionCategoria()); 
+        }
     }
 }

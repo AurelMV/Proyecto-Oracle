@@ -33,14 +33,7 @@
             this.menu = new System.Windows.Forms.MenuStrip();
             this.menucursos = new FontAwesome.Sharp.IconMenuItem();
             this.menuinscripcion = new FontAwesome.Sharp.IconMenuItem();
-            this.sudmenuinscripcion = new System.Windows.Forms.ToolStripMenuItem();
-            this.sudmenuestudiantes = new System.Windows.Forms.ToolStripMenuItem();
-            this.sudmenupagos = new System.Windows.Forms.ToolStripMenuItem();
-            this.inscripcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menudocentes = new FontAwesome.Sharp.IconMenuItem();
-            this.inscripcionDocentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosDocentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuciclos = new FontAwesome.Sharp.IconMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
@@ -96,14 +89,10 @@
             this.menucursos.Size = new System.Drawing.Size(210, 52);
             this.menucursos.Text = "Agregar Libros";
             this.menucursos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menucursos.Click += new System.EventHandler(this.menucursos_Click);
             // 
             // menuinscripcion
             // 
-            this.menuinscripcion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sudmenuinscripcion,
-            this.sudmenuestudiantes,
-            this.sudmenupagos,
-            this.inscripcionesToolStripMenuItem});
             this.menuinscripcion.IconChar = FontAwesome.Sharp.IconChar.IdCard;
             this.menuinscripcion.IconColor = System.Drawing.Color.Black;
             this.menuinscripcion.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -112,37 +101,10 @@
             this.menuinscripcion.Name = "menuinscripcion";
             this.menuinscripcion.Size = new System.Drawing.Size(210, 52);
             this.menuinscripcion.Text = "Gestionar Proveedores";
-            // 
-            // sudmenuinscripcion
-            // 
-            this.sudmenuinscripcion.Name = "sudmenuinscripcion";
-            this.sudmenuinscripcion.Size = new System.Drawing.Size(209, 22);
-            this.sudmenuinscripcion.Text = "Plataforma de Inscripcion";
-            // 
-            // sudmenuestudiantes
-            // 
-            this.sudmenuestudiantes.Name = "sudmenuestudiantes";
-            this.sudmenuestudiantes.Size = new System.Drawing.Size(209, 22);
-            this.sudmenuestudiantes.Text = "Estudiantes";
-            // 
-            // sudmenupagos
-            // 
-            this.sudmenupagos.Name = "sudmenupagos";
-            this.sudmenupagos.Size = new System.Drawing.Size(209, 22);
-            this.sudmenupagos.Text = "Pagos";
-            // 
-            // inscripcionesToolStripMenuItem
-            // 
-            this.inscripcionesToolStripMenuItem.Name = "inscripcionesToolStripMenuItem";
-            this.inscripcionesToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.inscripcionesToolStripMenuItem.Text = "Inscripciones";
+            this.menuinscripcion.Click += new System.EventHandler(this.menuinscripcion_Click);
             // 
             // menudocentes
             // 
-            this.menudocentes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inscripcionDocentesToolStripMenuItem,
-            this.datosDocentesToolStripMenuItem,
-            this.relacionesToolStripMenuItem});
             this.menudocentes.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
             this.menudocentes.IconColor = System.Drawing.Color.Black;
             this.menudocentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -151,24 +113,7 @@
             this.menudocentes.Name = "menudocentes";
             this.menudocentes.Size = new System.Drawing.Size(210, 52);
             this.menudocentes.Text = "Gestionar Libros";
-            // 
-            // inscripcionDocentesToolStripMenuItem
-            // 
-            this.inscripcionDocentesToolStripMenuItem.Name = "inscripcionDocentesToolStripMenuItem";
-            this.inscripcionDocentesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.inscripcionDocentesToolStripMenuItem.Text = "Registrar";
-            // 
-            // datosDocentesToolStripMenuItem
-            // 
-            this.datosDocentesToolStripMenuItem.Name = "datosDocentesToolStripMenuItem";
-            this.datosDocentesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.datosDocentesToolStripMenuItem.Text = "Datos";
-            // 
-            // relacionesToolStripMenuItem
-            // 
-            this.relacionesToolStripMenuItem.Name = "relacionesToolStripMenuItem";
-            this.relacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.relacionesToolStripMenuItem.Text = "Relaciones";
+            this.menudocentes.Click += new System.EventHandler(this.menudocentes_Click);
             // 
             // menuciclos
             // 
@@ -180,6 +125,7 @@
             this.menuciclos.Name = "menuciclos";
             this.menuciclos.Size = new System.Drawing.Size(210, 52);
             this.menuciclos.Text = "Gestionar Categorias";
+            this.menuciclos.Click += new System.EventHandler(this.menuciclos_Click);
             // 
             // button1
             // 
@@ -224,14 +170,7 @@
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private System.Windows.Forms.MenuStrip menu;
         private FontAwesome.Sharp.IconMenuItem menuinscripcion;
-        private System.Windows.Forms.ToolStripMenuItem sudmenuinscripcion;
-        private System.Windows.Forms.ToolStripMenuItem sudmenuestudiantes;
-        private System.Windows.Forms.ToolStripMenuItem sudmenupagos;
-        private System.Windows.Forms.ToolStripMenuItem inscripcionesToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem menudocentes;
-        private System.Windows.Forms.ToolStripMenuItem inscripcionDocentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem datosDocentesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem relacionesToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem menuciclos;
         private FontAwesome.Sharp.IconMenuItem menucursos;
         private System.Windows.Forms.Panel contenedor;
